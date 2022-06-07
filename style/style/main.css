@@ -12,8 +12,9 @@
 /*base*/
 body {
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+    text-align: justify;
 }
 
 header .container{
@@ -26,21 +27,23 @@ header .container{
 header .logo{
     margin-left: 5px;
     color: var(--rosa);
-    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-family:sans-serif;
+    font-size: 35px;
+    letter-spacing: .2rem;
 }
 
 header nav a{
     text-decoration: none;
     color:bisque;
-    margin-right: 10px;
+    margin-right: 3px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*filme principal*/
 main .filme-principal{
     font-size: 16px; 
-    background: url('../img/capa-ult.jpg');
-    background: linear-gradient((rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%));
+    background-image: url('../img/capa-ult.jpg');
+    position: relative;
 
     height: 400px;
     background-size: cover;
@@ -54,7 +57,7 @@ main .filme-principal{
 .filme-principal .descricao{
     margin-bottom: 90px
 }
-    
+
 .titulo{
     margin-top: 20px;
     font-size: 40px;
@@ -81,17 +84,25 @@ color: black;
     margin-right: 8px;
 }
 
+.barra{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: bisque;
+    padding: 15px 30px;
+    margin-right: 15px;
+}
+
 .container{
     margin-left: 20px;
     margin-right: 10px;
 }
 
 .box-filme{
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     display: flex;
 }
 
 .carrossel-filmes{
-    margin-top: 5px;
+    margin-top: 10px;
 }
